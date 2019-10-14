@@ -15,7 +15,7 @@ class CreateTableBinhluanTable extends Migration
     {
         Schema::create('binhluan', function (Blueprint $table) {
             $table->bigIncrements('binhluan_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user1_id');
             $table->unsignedBigInteger('tintuc_id');
             $table->longText('noidung');
             $table->unsignedTinyInteger("active")->default(1);

@@ -6,17 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ungho extends Model
 {
-    protected $table='Product';
-    protected $primaryKey ='product_id';
+    protected $table='ungho';
+    protected $primaryKey ='ungho_id';
     protected  $fillable =[
-        'product_name',
-        'category_id',
-        'detail',
-        'price',
-        'status',
-        'images',
-        'date',
-        'pricenew',
+        'ungho_name',
+        'chiendich_id',
+        'sotien',
+        'loinhan',
+        'hoten',
+        'dienthoai',
+        'email',
         'active',
 
     ];

@@ -15,6 +15,7 @@ class CreateTableUnghoTable extends Migration
     {
         Schema::create('ungho', function (Blueprint $table) {
             $table->bigIncrements('ungho_id');
+            $table->string('ungho_name');
             $table->unsignedBigInteger('chiendich_id');
             $table->float('sotien');
             $table->longText('loinhan');

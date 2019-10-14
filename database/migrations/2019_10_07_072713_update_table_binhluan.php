@@ -14,7 +14,7 @@ class UpdateTableBinhluan extends Migration
     public function up()
     {
         Schema::table('binhluan', function (Blueprint $table) {
-            $table->foreign("user_id")->references("user_id")->on("user");
+            $table->foreign("user1_id")->references("user1_id")->on("user1");
             $table->foreign("tintuc_id")->references("tintuc_id")->on("tintuc");
         });
     }
@@ -27,7 +27,7 @@ class UpdateTableBinhluan extends Migration
     public function down()
     {
         Schema::table('binhluan', function (Blueprint $table) {
-            $table->dropForeign(["user_id"]);
+            $table->dropForeign(["user1_id"]);
             $table->dropForeign(["tintuc_id"]);
         });
     }
